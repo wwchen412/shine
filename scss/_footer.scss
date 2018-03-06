@@ -1,0 +1,28 @@
+footer{
+    padding: 50px 25px;
+    background-color: #313131;
+    color:#B8B8B8;
+    .logo{
+        max-width: 100px;
+        display: block;
+        margin:0 auto;
+        margin-bottom: 1rem;
+    }
+    .social-links{
+       
+        li{
+            display: inline-block;
+            width: 50px;
+        }
+    }
+    hr{
+        border: 0;
+        height: 0px;
+        border-bottom: 1px solid #B8B8B8;
+        margin: 25px 0;
+    }
+    .copy-right{
+    color:#9fa0a0;
+    
+  }
+}

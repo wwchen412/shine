@@ -1,0 +1,13 @@
+@mixin size($w,$h:$w) {
+  width: $w;
+  height: $h;
+}
+
+@mixin border-radius($r) {
+  border-radius: $r;
+  -webkit-border-radius: $r;
+  -moz-border-radius: $r;
+}
+@mixin fontTitle{
+     font-family: 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, serif;
+    }
