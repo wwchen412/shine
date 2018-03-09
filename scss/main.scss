@@ -1,6 +1,7 @@
 @import "_color.scss";
 @import "_mixin.scss";
 @import "_footer.scss";
+@import "_child.scss";
 body,html{
   font-size: 16px;
   background: #fafafa;
@@ -44,7 +45,12 @@ p{
   line-height: 150%;
 
 }
-
+hr{
+  border: 0;
+  height: 0;
+  border-bottom:1px solid $darkgray; 
+  margin: 25px 0;
+}
 .small{
   transform: scale(.75);  
 }
@@ -61,8 +67,8 @@ p{
         btn Settings
 ================================
 */
-.bg-main{
-  background-color: $purple;
+.bg-text{
+  background-color: $article;
 }
 .bg-gray{
   background: $darkgray;
@@ -87,6 +93,9 @@ p{
   color:#fff;
   background-color: $purple;
 }
+.rounded{
+  border-radius: 5px;
+}
 
 /* 
 ================================
@@ -104,7 +113,7 @@ p{
   margin-bottom: 1rem; 
 }
 .mb-25px{
-  margin-bottom: 1rem;
+  margin-bottom: 25px;
 }
 .my-25px{
   margin-top:25px;
@@ -112,6 +121,10 @@ p{
 }
 .p-3{
   padding:1rem;
+}
+.py-3{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* 
@@ -126,6 +139,9 @@ p{
 }
 .bg-light{
   background: #fff !important;
+}
+.text-main{
+  color:$black;
 }
 /* ===========================
 
@@ -164,6 +180,9 @@ header {
       transform: translateX(-15px);
       margin: auto;
     }
+  }
+  &+*{
+    padding-top: 35px;
   }
 }
 // 

@@ -1,0 +1,74 @@
+// 頁面標題
+.pageTitle {
+  background: $purple;
+  padding: 1.5rem 0;
+  margin: 0 -15px;
+  h2 {
+    color: #fff;
+  }
+
+  h4 {
+    color: #fff;
+    margin: 0;
+  }
+}
+
+//blog
+.editor-section {
+  .pageTitle {
+    padding: 1.5rem 1rem;
+    h2 {
+      line-height: 150%;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+  .article-info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    .share-btns {
+      margin-left: auto;
+      &>*{
+          vertical-align: middle;
+      }
+    }
+  }
+  .alert{
+  border: 1px dashed $darkgray;
+  padding: 25px 15px;
+}
+}
+.article-content{
+  img{
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+}
+
+.icon {
+  width: 10px;
+  height: auto;
+  display: inline-block;
+  vertical-align:middle;
+  & + p {
+    display: inline-block;
+    transform: scale(0.8);
+    transform-origin: left center;
+    margin-right:-10px; 
+  }
+}
+.contact{
+  input{
+    outline: 0;
+    border: 1px solid $darkgray;
+    color:$darkgray;
+    padding: 5px 10px;
+    background-color:#f2f2f2;
+    &:placeholer{
+color:$darkgray;
+    }
+  }
+}
