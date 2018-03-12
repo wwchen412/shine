@@ -108,3 +108,63 @@
     outline: 0;
   }
 }
+
+// 頁碼
+ol.pageNum{
+  margin: 25px 15px;
+ display: flex;
+ justify-content: space-between;
+  li{
+    flex: 1;
+    text-align: center;
+    margin-bottom: 0;
+    border-right: 1px solid $darkgray;
+    border-top:1px solid $darkgray;
+    border-bottom: 1px solid $darkgray;
+    overflow: hidden;
+    background-color: $article;
+    &:hover,&:active{
+      background-color: darken($article,5%);
+    }
+    &:nth-child(1){
+      border-left: 1px solid $darkgray;
+      border-radius: 4px 0 0 4px;
+    }&:last-child{
+      border-radius: 0 4px 4px 0;
+    }
+    a{
+      display: block;
+      padding:7.5px 5px;
+      font-size: 0.8rem;
+      color:$black;
+      transform: scale(.8);
+    }
+  }
+  
+}
+
+.about-blocks{
+
+ 
+  p{
+    margin-bottom: 0.5rem;
+  }
+}
+ h3.square-title{
+    
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: url('../img/about-icon.png');
+      background-size: cover;
+      margin-right: 5px;
+    }
+  }
+ .appointment-block{
+   iframe{
+     width: 100%;
+   
+   }
+ } 
