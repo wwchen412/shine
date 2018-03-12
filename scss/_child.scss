@@ -61,9 +61,16 @@
   }
 }
 .contact {
+  img{
+      display: inline-block;
+      max-width: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
   .input-group{
     padding: 5px 0;
     margin-bottom: 10px;
+    
     p{
     display: inline-block;
     margin-bottom: 5px;
