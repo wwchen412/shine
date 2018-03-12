@@ -52,6 +52,12 @@ hr{
   border-bottom:1px solid $darkgray; 
   margin: 25px 0;
 }
+a{
+  color:$black;
+  &:hover{
+    color:lighten($black,10%);
+  }
+}
 .small{
   transform: scale(.75);  
 }
@@ -178,7 +184,7 @@ hr{
 // 上方共用導覽列
 header {
   background-color: $gray;
-  height: 35px;
+  // height: 35px;
   padding: 5px 10px;
   font-size: 0;
   // position:fixed;
@@ -207,6 +213,27 @@ header {
   }
   &+*{
     // padding-top: 35px;
+  }
+  .slide-bar{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    .nav{
+       padding: 20px 0;
+        border-bottom: 1px solid $darkgray;
+    }
+    li{
+      padding: 12.5px 0;
+      border-bottom: 1px solid $darkgray;
+      a{
+        display: inline-block;
+        &:before{
+          content: '-';
+          display: inline-block;
+          margin-right: 5px;
+        }
+      }
+    }
   }
 }
 // 
